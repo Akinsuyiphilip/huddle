@@ -1,0 +1,117 @@
+:root {
+    --clr-violet: hsl(257, 40%, 49%);
+    --clr-magenta: hsl(300, 69%, 71%);
+    --clr-white: #fff;
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --ff-sans: 'Open Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+}
+::before{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem 4.5rem 0;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-color: var(--clr-violet);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+.header {
+    img {
+        width: calc(216rem /16);
+        display: block;
+    }
+}
+
+.page {
+    display: flex;
+    margin-top: 2.1rem;
+    padding-top: 3rem;
+    flex-direction: row;
+    text-align: left;
+    font-family: var(--ff-poppins);
+
+    img {
+        flex-basis: 54.78%;
+        width: 40rem;
+        height: 32rem;
+    }
+}
+
+.page .sec {
+    color: var(--clr-white);
+    padding: 2rem 0 0 3rem;
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.015rem;
+    }
+
+    p {
+        margin-top: 1.23rem;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        opacity: 0.8;
+        margin-bottom: 2.45rem;
+    }
+
+    .register {
+        font-size: 1.15rem;
+        background-color: var(--clr-white);
+        color: var(--clr-violet);
+        padding: 1.1rem 4rem;
+        text-decoration: none;
+        border-radius: 2rem;
+        box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+         
+    }
+    .register:hover{
+        background-color: var(--clr-magenta);
+        border-radius: 1.7;
+    }
+}
+
+
+footer {
+    margin-top: 1.35rem;
+    margin-bottom: 0;
+    .ic{
+        display: flex;
+        justify-content: end;
+
+        .fab{
+            padding: 1rem;
+            font-size: 2rem;
+            
+        }
+        .fab:hover{
+            color: var(--clr-white);
+        }
+    }
+    
+    .attribution{
+        color:var(--clr-white);
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        padding: 0%;
+        a{
+            text-decoration: none;
+            color: var(--clr-magenta);
+            font-family: var(--ff-sans);
+            font-weight: bolder;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+}
